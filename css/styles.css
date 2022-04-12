@@ -43,12 +43,15 @@ body {
 
 .nav a {
 	color: rgba(0, 0, 0, 0.504);
-	padding: 14px 20px;
+	padding: 0px 100px;
 	text-decoration: none;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	transition: all 0.3 ease;
 }
-
+.nav a:hover {
+	background-color: turquoise;
+}
 .main {
 	grid-area: main;
 	min-height: 100vh;
@@ -82,7 +85,7 @@ aside img {
 	height: 16rem;
 	border-radius: 12px;
 	margin: 10px;
-	animation: slide-fwd-center 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+	animation: slide-fwd-center 1s cubic-bezier(0.555, 0.055, 0.975, 0.19) both;
 }
 
 @keyframes slide-fwd-center {
@@ -91,8 +94,8 @@ aside img {
 		width: 16rem;
 	}
 	100% {
-		height: 20rem;
-		width: 20rem;
+		height: 30rem;
+		width: 30rem;
 	}
 }
 
@@ -141,6 +144,68 @@ aside img {
 	height: 200px;
 	margin: 5px;
 	border-radius: 20px;
+	webkit-animation: jello-horizontal 0.9s both;
+	animation: jello-horizontal 0.9s both;
+}
+@-webkit-keyframes jello-horizontal {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		-webkit-transform: scale3d(1.25, 0.75, 1);
+		transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+		-webkit-transform: scale3d(0.75, 1.25, 1);
+		transform: scale3d(0.75, 1.25, 1);
+	}
+	50% {
+		-webkit-transform: scale3d(1.15, 0.85, 1);
+		transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+		-webkit-transform: scale3d(0.95, 1.05, 1);
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+		-webkit-transform: scale3d(1.05, 0.95, 1);
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes jello-horizontal {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		-webkit-transform: scale3d(1.25, 0.75, 1);
+		transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+		-webkit-transform: scale3d(0.75, 1.25, 1);
+		transform: scale3d(0.75, 1.25, 1);
+	}
+	50% {
+		-webkit-transform: scale3d(1.15, 0.85, 1);
+		transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+		-webkit-transform: scale3d(0.95, 1.05, 1);
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+		-webkit-transform: scale3d(1.05, 0.95, 1);
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
 }
 
 .textProductos {
@@ -151,10 +216,11 @@ aside img {
 
 .imgContacto {
 	border-radius: 30rem;
-	width: 500px;
-	height: 500px;
+	width: 50rem;
+	height: 50rem;
 	margin-left: 40rem;
 	margin-top: 5rem;
+	animation: slide-fwd-center 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
 }
 
 .formContacto {
@@ -197,5 +263,67 @@ aside img {
 
 	.containerTexturado {
 		grid-template-columns: 1fr;
+	}
+}
+
+.sumbit {
+	border-radius: 30rem;
+	-webkit-animation: shake-horizontal 2s ease-in-out infinite both;
+	animation: shake-horizontal 2s ease-in-out infinite both;
+}
+@-webkit-keyframes shake-horizontal {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+	80% {
+		-webkit-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+	90% {
+		-webkit-transform: translateX(-8px);
+		transform: translateX(-8px);
+	}
+}
+@keyframes shake-horizontal {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+	80% {
+		-webkit-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+	90% {
+		-webkit-transform: translateX(-8px);
+		transform: translateX(-8px);
 	}
 }
