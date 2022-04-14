@@ -1,0 +1,11 @@
+//IMPORT PAGINAS
+@import './paginas/productos';
+@import './paginas/servicios';
+@import './paginas/ubicacion';
+@import './paginas/contacto';
+
+// IMPORT COMPONENTES
+@import './componentes/carousel';
+
+// IMPORT BOOTSTRAP
+@import '../node_modules/bootstrap/scss/bootstrap';

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0" />
+		<title>PetraPlast</title>
+
+		<link rel="stylesheet" href="../../scss/custom.scss" />
+	</head>
+	<body>
+		<!-- INICIO NAVBAR -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Petraplast</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./productos.html">Productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./servicios.html">Servicios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./ubicacion.html">Ubicación</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#"
+								>Contacto</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- FIN NAVBAR -->
+
+		<!-- INICIO CONTENIDO MAIN -->
+		<main class="w-50 my-5 mx-auto min-vh-100">
+			<section class="text-center">
+				<article>
+					<img
+						class="imgContacto"
+						src="../images/frente.jpg"
+						alt="Frente de una casa con paredes de
+					         piedras oscuras"
+					/>
+				</article>
+			</section>
+			<section class="mt-5">
+				<h2>Consultas</h2>
+				<form>
+					<div class="mb-3">
+						<label form="nombre">Nombre</label>
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Nombre"
+							id="nombre"
+						/>
+					</div>
+					<div class="mb-3">
+						<label for="inputEmail1" class="form-label">Email</label>
+						<input
+							type="email"
+							class="form-control"
+							id="inputEmail1"
+							placeholder="email@gmail.com"
+							aria-describedby="emailHelp"
+						/>
+					</div>
+					<div class="mb-3">
+						<label for="mensaje" class="form-label">Mensaje</label>
+						<textarea
+							class="form-control"
+							placeholder="Escribe algo aquí"
+							id="mensaje"
+							cols="65"
+							rows="10"
+						></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</form>
+			</section>
+		</main>
+		<!-- FIN CONTENIDO MAIN -->
+
+		<!-- INICIO FOOTER -->
+		<footer class="bg-primary p-3">
+			<h6 class="mb-0 text-white text-center">
+				Copyright © 2022 PetraPlast | Todos los derechos reservados
+			</h6>
+		</footer>
+		<!-- FIN FOOTER -->
+
+		<script src="../index.js"></script>
+	</body>
+</html>
