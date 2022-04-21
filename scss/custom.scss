@@ -1,3 +1,5 @@
+@import './global';
+
 //IMPORT PAGINAS
 @import './paginas/productos';
 @import './paginas/servicios';
@@ -6,6 +8,4 @@
 
 // IMPORT COMPONENTES
 @import './componentes/carousel';
-
-// IMPORT BOOTSTRAP
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import './componentes/navbar';

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+$primary: #3aafa9;
+$secondary: #1e306e;
+
+$black: #17252a;
+$white: #feffff;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: $white !important;
+	font-family: 'Poppins', sans-serif !important;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+// IMPORT BOOTSTRAP
+@import '../node_modules/bootstrap/scss/bootstrap';

@@ -1,12 +1,14 @@
-.imgUbicacion {
-	width: 30rem;
-	height: 30rem;
-	max-width: 100%;
-	border-radius: 15px;
-}
+.ubicacion {
+	.imgUbicacion {
+		width: 30rem;
+		height: 30rem;
+		max-width: 100%;
+		border-radius: 15px;
+	}
 
-.map {
-	width: 1710px;
-	height: 200px;
-	max-width: 100%;
+	.map {
+		width: 1710px;
+		height: 200px;
+		max-width: 100%;
+	}
 }
