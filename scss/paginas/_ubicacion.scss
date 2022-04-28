@@ -7,8 +7,6 @@
 	}
 
 	.map {
-		width: 1710px;
-		height: 200px;
-		max-width: 100%;
+		@extend .imgUbicacion;
 	}
 }

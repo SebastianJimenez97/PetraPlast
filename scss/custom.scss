@@ -1,5 +1,8 @@
 @import './global';
 
+// IMPORT UTILS
+@import './utils/mixins.scss';
+
 //IMPORT PAGINAS
 @import './paginas/productos';
 @import './paginas/servicios';
