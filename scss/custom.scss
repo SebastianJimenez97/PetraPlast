@@ -1,0 +1,14 @@
+@import './global';
+
+// IMPORT UTILS
+@import './utils/mixins.scss';
+
+//IMPORT PAGINAS
+@import './paginas/productos';
+@import './paginas/servicios';
+@import './paginas/ubicacion';
+@import './paginas/contacto';
+
+// IMPORT COMPONENTES
+@import './componentes/carousel';
+@import './componentes/navbar';
