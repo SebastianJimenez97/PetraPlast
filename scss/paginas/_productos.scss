@@ -1,8 +1,8 @@
 @import '../utils/mixins.scss';
 
 .imgTexturado {
-	width: 12rem;
-	height: 12rem;
+	width: 90%;
+	height: 15rem;
 	border-radius: 12px;
 
 	@include transition-mixin(transform, ease-out, 150ms);

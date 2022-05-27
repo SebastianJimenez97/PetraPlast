@@ -5,9 +5,12 @@ $basic-colors: (
 	white: #feffff,
 );
 
+$primary: #3aafa9;
+$secondary: #1e306e;
+
 $main-colors: (
-	primary: #3aafa9,
-	secondary: #1e306e,
+	primary: $primary,
+	secondary: $secondary,
 );
 
 * {
